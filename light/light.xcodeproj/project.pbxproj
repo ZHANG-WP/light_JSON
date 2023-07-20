@@ -12,7 +12,7 @@
 		CC8A7D5C2A67DCC9002EB925 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC8A7D5B2A67DCC9002EB925 /* Assets.xcassets */; };
 		CC8A7D5F2A67DCC9002EB925 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC8A7D5E2A67DCC9002EB925 /* Preview Assets.xcassets */; };
 		CC9F7FF42A68C5FA00230FEA /* WindowHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F7FF32A68C5FA00230FEA /* WindowHistory.swift */; };
-		CC9F80122A69004200230FEA /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F80112A69004100230FEA /* HistoryView.swift */; };
+		CC9F80342A69205900230FEA /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F80332A69205900230FEA /* HistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +22,7 @@
 		CC8A7D5B2A67DCC9002EB925 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC8A7D5E2A67DCC9002EB925 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC9F7FF32A68C5FA00230FEA /* WindowHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowHistory.swift; sourceTree = "<group>"; };
-		CC9F80112A69004100230FEA /* HistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryView.swift; path = "../../../開關/action/action/HistoryView.swift"; sourceTree = "<group>"; };
+		CC9F80332A69205900230FEA /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				CC8A7D572A67DCC7002EB925 /* lightApp.swift */,
-				CC9F80112A69004100230FEA /* HistoryView.swift */,
 				CC9F7FF32A68C5FA00230FEA /* WindowHistory.swift */,
+				CC9F80332A69205900230FEA /* HistoryView.swift */,
 				CC8A7D592A67DCC7002EB925 /* ContentView.swift */,
 				CC8A7D5B2A67DCC9002EB925 /* Assets.xcassets */,
 				CC8A7D5D2A67DCC9002EB925 /* Preview Content */,
@@ -145,7 +145,7 @@
 			files = (
 				CC9F7FF42A68C5FA00230FEA /* WindowHistory.swift in Sources */,
 				CC8A7D5A2A67DCC7002EB925 /* ContentView.swift in Sources */,
-				CC9F80122A69004200230FEA /* HistoryView.swift in Sources */,
+				CC9F80342A69205900230FEA /* HistoryView.swift in Sources */,
 				CC8A7D582A67DCC7002EB925 /* lightApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

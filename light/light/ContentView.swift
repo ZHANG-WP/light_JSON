@@ -25,7 +25,7 @@ class LightViewModel: ObservableObject {
                 switchHistory.append(SwitchRecord(status: isEnable, timestamp: Date(), username: "123"))
             }
         } catch {
-            print("寫入錯誤：\(error.localizedDescription)")
+            print("電燈寫入錯誤：\(error.localizedDescription)")
         }
     }
 
@@ -33,13 +33,12 @@ class LightViewModel: ObservableObject {
     func readFromJsonFile() {
         do {
             if let jsonFileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("status.json") {
-                print("read...1")
                 let jsonData = try Data(contentsOf: jsonFileURL)
                 let data = try JSONDecoder().decode(LightData.self, from: jsonData)
                 isEnable = data.status
             }
         } catch {
-            print("讀取錯誤1：\(error.localizedDescription)")
+            print("電燈讀取錯誤：\(error.localizedDescription)")
         }
     }
 }
@@ -54,14 +53,13 @@ class WindowViewModel: ObservableObject {
             let jsonData = try JSONSerialization.data(withJSONObject: data, options: .prettyPrinted)
 
             if let jsonFileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("window_status.json") {
-                print("writting..2")
                 try jsonData.write(to: jsonFileURL)
 
                 //將目前開關狀態、時間戳記和使用者名稱新增到歷史紀錄陣列
                 window.append(Window(status: isOn, timestamp: Date(), username: "345"))
             }
         } catch {
-            print("寫入錯誤：\(error.localizedDescription)")
+            print("天窗寫入錯誤：\(error.localizedDescription)")
         }
     }
 
@@ -69,13 +67,12 @@ class WindowViewModel: ObservableObject {
     func readFromJsonFile_window() {
         do {
             if let jsonFileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("window_status.json") {
-                print("read...2")
                 let jsonData = try Data(contentsOf: jsonFileURL)
                 let data = try JSONDecoder().decode(WindowData.self, from: jsonData)
                 isOn = data.window_status
             }
         } catch {
-            print("讀取錯誤2：\(error.localizedDescription)")
+            print("天窗讀取錯誤：\(error.localizedDescription)")
         }
     }
 }
